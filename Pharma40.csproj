@@ -6,4 +6,25 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="artifacts\**\*.cs" />
+    <Compile Remove="verify-out\**\*.cs" />
+    <Content Remove="artifacts\**\*" />
+    <Content Remove="verify-out\**\*" />
+    <None Remove="artifacts\**\*" />
+    <None Remove="verify-out\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis" Version="1.74.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.74.0" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.70.0.3819" />
+    <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.74.0.1869" />
+    <PackageReference Include="MimeKit" Version="4.14.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.3" />
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.6.1" />
+  </ItemGroup>
+
 </Project>
